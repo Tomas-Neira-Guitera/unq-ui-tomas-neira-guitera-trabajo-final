@@ -10,12 +10,21 @@ const App = () => {
     setDifficulty(selectedDifficulty);
   };
 
+  const handleReturnHome = () => {
+    setDifficulty(null);
+  };
+
   return (
-      !difficulty ? (
+    <>
+      {!difficulty ? (
         <HomePage onStartGame={handleStartGame} />
       ) : (
-        <GameBoard difficulty={difficulty} />
-      )
+        <GameBoard
+          difficulty={difficulty}
+          onReturnHome={handleReturnHome}
+        />
+      )}
+    </>
   );
 };
 

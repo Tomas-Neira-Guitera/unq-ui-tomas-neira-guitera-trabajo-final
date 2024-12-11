@@ -18,15 +18,14 @@ body {
   background-color: #1E2A2F;
 }
 
-/* Tarjeta central */
 .card {
-  background-color: #4D4D4D;
+  background: linear-gradient(145deg, #4b4b4b, #494949);
   padding: 40px;
   border-radius: 20px;
   text-align: center;
-  width: 400px;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border: 2px solid #6C6C6C;
 }
 
 .title {
@@ -85,18 +84,24 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transition: transform 0.4s;
+  transition: transform 0.2s;
 }
 
 .cell .front {
-  background-color: rgb(34, 87, 156);
+  background: linear-gradient(145deg, #1E3A8A, #3B82F6);
+  border: 1px solid #1E3A8A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cell .back {
-  background-color: blue;
   background-size: cover;
   background-position: center;
+  background-color: #1E3A8A;
+  border: 1px solid #1E3A8A;
+  border-radius: 10px;
   transform: rotateY(180deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cell.flipped .front {
@@ -105,4 +110,66 @@ body {
 
 .cell.flipped .back {
   transform: rotateY(0deg);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  background: linear-gradient(145deg, #1E3A8A, #3B82F6);
+  border: 1px solid #1E3A8A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #3E3E3E, #5A5A5A);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  border: 2px solid #6C6C6C;
+}
+
+.modal-content h2 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
