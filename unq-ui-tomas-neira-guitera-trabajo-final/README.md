@@ -1,8 +1,11 @@
-# React + Vite
+# Juego de Memoria - Memotest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pasos para jugar:
 
-Currently, two official plugins are available:
+- *Paso 1:* Clonar el repositorio en una carpeta de la computadora.
+  
+- *Paso 2:* Dentro de la carpeta del repositorio ejecutar en la consola: npm install.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- *Paso 3:* Dentro de la carpeta del repositorio ejecutar en la consola: npm run dev.
+
+- *Paso 4:* Ingresar al link que aparece en la consola.
